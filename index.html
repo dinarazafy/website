@@ -2,21 +2,18 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dina RAZAFY — Assistante virtuelle</title>
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+<meta name="description" content="Dina Razafy, assistante virtuelle : gestion de projet, assistance opérationnelle, exécutive et administrative.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#FFFFFF}
 a{color:#D23C15}a:hover{color:#A82E0E}
 </style>
-</helmet>
+<style>html{scroll-behavior:smooth}*{box-sizing:border-box}img{max-width:100%}</style>
+</head>
+<body>
 <div style="font-family: Poppins, system-ui, sans-serif; color: #1D1B1A; background: #FFFFFF; width: 100%; line-height: 1.6">
 
 <!-- NAV -->
@@ -55,7 +52,7 @@ Discutons sur WhatsApp</a>
 <div style="flex: 1 1 320px; min-width: 0; display: flex; justify-content: center">
 <div style="position: relative; width: 100%; max-width: 400px">
 <div style="position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; background: #FF5A36; border-radius: 28px"></div>
-<img src="./assets/560195c142f78328285b569fb52a5716.jpg" alt="Portrait de Dina Razafy, assistante virtuelle" style="position: relative; display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 28px">
+<img src="dina.jpg" alt="Portrait de Dina Razafy, assistante virtuelle" style="position: relative; display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 28px">
 <p style="position: absolute; left: -10px; bottom: 28px; margin: 0; background: #FFFFFF; border-radius: 16px; padding: 12px 18px; box-shadow: 0 16px 32px -16px rgba(29,27,26,0.35); font-size: 14px"><span style="display: block; font-family: Anton, sans-serif; font-size: 30px; line-height: 1; color: #D23C15">8 ANS</span>d'expériences, plusieurs secteurs</p>
 </div>
 </div>
@@ -154,19 +151,127 @@ Ce que vous gagnez</p>
 <div style="max-width: 1200px; margin: 0 auto; padding: 96px 20px">
 <h2 style="margin: 0; font-family: Anton, sans-serif; font-weight: 400; font-size: clamp(40px, 5.5vw, 68px); line-height: 1; text-transform: uppercase">Ce que je fais <span style="color: #FF5A36">pour vous</span></h2>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; margin-top: 44px">
-<sc-for list="{{services}}" as="s" hint-placeholder-count="6">
+
 <article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #F2E4DF; border-radius: 20px; padding: 28px">
 <div style="display: flex; align-items: center; gap: 12px">
-<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">{{s.n}}</span>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">{{s.title}}</h3>
+<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">01</span>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">Gestion administrative &amp; organisationnelle</h3>
 </div>
 <ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #3B3735">
-<sc-for list="{{s.items}}" as="it" hint-placeholder-count="4">
-<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>{{it}}</span></li>
-</sc-for>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Gestion des e-mails, agendas et rendez-vous</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Rédaction de contrats, baux et avenants</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Mise en forme et archivage de documents</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Suivi des dossiers administratifs et financiers</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Classement et centralisation des informations</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Rapports, bilans et comptes rendus</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Préparation de devis et de factures</span></li>
+
 </ul>
 </article>
-</sc-for>
+
+<article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #F2E4DF; border-radius: 20px; padding: 28px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">02</span>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">Gestion de projet, coordination &amp; support</h3>
+</div>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #3B3735">
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Planification et suivi des plannings</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Coordination des équipes et prestataires</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Suivi budgétaire, facturation et paiements</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Respect des priorités et des délais</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Organisation de réunions, masterclass et webinaires</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Automatisations simples (Zapier, Power Automate)</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Tableaux de suivi dans Notion, Asana ou ClickUp</span></li>
+
+</ul>
+</article>
+
+<article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #F2E4DF; border-radius: 20px; padding: 28px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">03</span>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">Relation &amp; service client</h3>
+</div>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #3B3735">
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Support client par e-mail, message et téléphone</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Suivi, relances, retours et réclamations</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Gestion des bases de données clients</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Mise à jour du CRM et des dossiers</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Onboarding des nouveaux clients</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Modèles de réponses et FAQ client</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Fidélisation et expérience client</span></li>
+
+</ul>
+</article>
+
+<article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #F2E4DF; border-radius: 20px; padding: 28px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">04</span>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">Veille, documentation &amp; optimisation</h3>
+</div>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #3B3735">
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Recherche d’informations et veille concurrentielle</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Synthèses et notes de veille</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Rédaction de procédures et guides internes</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Cartographie et optimisation des processus</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Automatisation des tâches répétitives</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Mise en place d’outils adaptés</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Amélioration continue de l’efficacité</span></li>
+
+</ul>
+</article>
+
+<article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #F2E4DF; border-radius: 20px; padding: 28px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-family: Anton, sans-serif; font-size: 22px; color: #FFFFFF; background: #D23C15; width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex: none">05</span>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600">Assistance personnelle &amp; exécutive</h3>
+</div>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #3B3735">
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Gestion complète d’agendas complexes</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Organisation des déplacements et réservations</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Préparation des réunions et dossiers</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Filtrage des e-mails et des appels</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Gestion des priorités au quotidien</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Rappels, suivis et relances personnelles</span></li>
+
+<li style="display: flex; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D23C15" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 5px"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M4.2 16.5l15.6-9"></path></svg><span>Confidentialité et information sensible</span></li>
+
+</ul>
+</article>
+
 </div>
 </div>
 </section>
@@ -179,9 +284,73 @@ Ce que vous gagnez</p>
 <p style="margin: 14px 0 0; color: #FFE7E0; font-size: 16px">Je m'adapte à vos outils existants, ou je vous aide à choisir les bons.</p>
 </div>
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-wrap: wrap; gap: 10px">
-<sc-for list="{{tools}}" as="t" hint-placeholder-count="12">
-<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">{{t}}</span>
-</sc-for>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Google Workspace</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">OneDrive</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Microsoft Office</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Notion</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Asana</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Trello</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">ClickUp</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Slack</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Teams</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Discord</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Pipedrive</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Bitrix</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Pennylane</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Zoho</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Clio</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Mailchimp</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">ActiveCampaign</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Learnybox</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Systeme.io</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Zapier</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Power Automate</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Canva</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">CapCut</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Clipchamp</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">ElevenLabs</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Transkriptor</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">ChatGPT</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Claude</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Gemini</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Copilot</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Perplexity</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Lodgify</span>
+
+<span style="padding: 8px 16px; border: 1.5px solid rgba(255,255,255,0.7); border-radius: 999px; font-size: 14px; font-weight: 500">Rentila</span>
+
 </div>
 </div>
 </section>
@@ -213,16 +382,34 @@ Bilingue : Français – Anglais</p>
 <div style="max-width: 1200px; margin: 0 auto; padding: 96px 20px">
 <h2 style="margin: 0; font-family: Poppins, system-ui, sans-serif; font-weight: 600; letter-spacing: -0.02em; font-size: clamp(32px, 4.2vw, 48px); line-height: 1.15">Ils me recommandent</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; margin-top: 40px">
-<sc-for list="{{quotes}}" as="q" hint-placeholder-count="3">
+
 <figure style="margin: 0; background: #FFFFFF; color: #1D1B1A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
 <svg width="104" height="18" viewBox="0 0 104 18" role="img" aria-label="5 étoiles sur 5"><g fill="#FF5A36"><path d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(21.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(43 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(64.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(86 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path></g></svg>
-<blockquote style="margin: 0; font-size: 15px; color: #3B3735; flex-grow: 1">« {{q.text}} »</blockquote>
+<blockquote style="margin: 0; font-size: 15px; color: #3B3735; flex-grow: 1">« Dina est très à l’écoute, d’une grande flexibilité et d’un réel souci de bien faire. Elle accueille les retours avec ouverture. Elle fait preuve d’application et d’engagement, tout en étant une excellente collaboratrice. »</blockquote>
 <figcaption style="display: flex; align-items: center; gap: 12px">
-<span style="width: 44px; height: 44px; border-radius: 999px; background: #FFF1EC; color: #A82E0E; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px; flex: none">{{q.initials}}</span>
-<span><span style="display: block; font-weight: 600; font-size: 15px">{{q.name}}</span><span style="display: block; font-size: 13px; color: #6A625E">{{q.role}}</span></span>
+<span style="width: 44px; height: 44px; border-radius: 999px; background: #FFF1EC; color: #A82E0E; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px; flex: none">MP</span>
+<span><span style="display: block; font-weight: 600; font-size: 15px">Marine Piccinini</span><span style="display: block; font-size: 13px; color: #6A625E">Assistante polyvalente</span></span>
 </figcaption>
 </figure>
-</sc-for>
+
+<figure style="margin: 0; background: #FFFFFF; color: #1D1B1A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<svg width="104" height="18" viewBox="0 0 104 18" role="img" aria-label="5 étoiles sur 5"><g fill="#FF5A36"><path d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(21.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(43 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(64.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(86 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path></g></svg>
+<blockquote style="margin: 0; font-size: 15px; color: #3B3735; flex-grow: 1">« J’ai beaucoup apprécié de travailler avec Dina. Gentille, serviable et toujours prête à aider : sa loyauté et sa bienveillance ont vraiment fait la différence dans notre équipe. »</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px">
+<span style="width: 44px; height: 44px; border-radius: 999px; background: #FFF1EC; color: #A82E0E; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px; flex: none">SP</span>
+<span><span style="display: block; font-weight: 600; font-size: 15px">Solène Pante</span><span style="display: block; font-size: 13px; color: #6A625E">Assistante marketing &amp; éditoriale</span></span>
+</figcaption>
+</figure>
+
+<figure style="margin: 0; background: #FFFFFF; color: #1D1B1A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<svg width="104" height="18" viewBox="0 0 104 18" role="img" aria-label="5 étoiles sur 5"><g fill="#FF5A36"><path d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(21.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(43 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(64.5 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path><path transform="translate(86 0)" d="M9 0l2.6 5.6 6.1.7-4.5 4.1 1.2 6L9 13.4 3.6 16.4l1.2-6L.3 6.3l6.1-.7z"></path></g></svg>
+<blockquote style="margin: 0; font-size: 15px; color: #3B3735; flex-grow: 1">« Réactive et très adaptable, elle dépasse souvent les attentes. Sa gestion de l’information et son intelligence en font une partenaire de confiance, toujours force de proposition. »</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px">
+<span style="width: 44px; height: 44px; border-radius: 999px; background: #FFF1EC; color: #A82E0E; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px; flex: none">BT</span>
+<span><span style="display: block; font-weight: 600; font-size: 15px">Bruna Tuffaloni</span><span style="display: block; font-size: 13px; color: #6A625E">Assistante éditoriale</span></span>
+</figcaption>
+</figure>
+
 </div>
 </div>
 </section>
@@ -245,9 +432,25 @@ Bilingue : Français – Anglais</p>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 32px">
-<sc-for list="{{skills}}" as="k" hint-placeholder-count="9">
-<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">{{k}}</span>
-</sc-for>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Écoute active</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Multi-tâche</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Organisée</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Empathique</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Intègre</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Sens du détail</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Rigoureuse</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Réactive</span>
+
+<span style="padding: 8px 16px; background: #1D1B1A; color: #FFFFFF; border-radius: 999px; font-size: 14px">Orientée solution</span>
+
 </div>
 <p style="margin: 28px auto 0; max-width: 640px; text-align: center; font-size: 15px; color: #4B4542"><strong style="color: #D23C15">PS :</strong> je ne suis pas parfaite, mais je m'engage à donner le meilleur de moi-même pour aller au-delà de vos attentes.</p>
 </section>
@@ -287,40 +490,5 @@ Me suivre sur LinkedIn</a>
 </footer>
 
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":7200}}'>
-class Component extends DCLogic {
-  renderVals() {
-    return {
-      services: [
-        { n: '01', title: 'Gestion administrative & organisationnelle', items: ['Gestion des e-mails, agendas et rendez-vous', 'Rédaction de contrats, baux et avenants', 'Mise en forme et archivage de documents', 'Suivi des dossiers administratifs et financiers', 'Classement et centralisation des informations', 'Rapports, bilans et comptes rendus', 'Préparation de devis et de factures'] },
-        { n: '02', title: 'Gestion de projet, coordination & support', items: ['Planification et suivi des plannings', 'Coordination des équipes et prestataires', 'Suivi budgétaire, facturation et paiements', 'Respect des priorités et des délais', 'Organisation de réunions, masterclass et webinaires', 'Automatisations simples (Zapier, Power Automate)', 'Tableaux de suivi dans Notion, Asana ou ClickUp'] },
-        { n: '03', title: 'Relation & service client', items: ['Support client par e-mail, message et téléphone', 'Suivi, relances, retours et réclamations', 'Gestion des bases de données clients', 'Mise à jour du CRM et des dossiers', 'Onboarding des nouveaux clients', 'Modèles de réponses et FAQ client', 'Fidélisation et expérience client'] },
-        { n: '04', title: 'Veille, documentation & optimisation', items: ['Recherche d’informations et veille concurrentielle', 'Synthèses et notes de veille', 'Rédaction de procédures et guides internes', 'Cartographie et optimisation des processus', 'Automatisation des tâches répétitives', 'Mise en place d’outils adaptés', 'Amélioration continue de l’efficacité'] },
-        { n: '05', title: 'Assistance personnelle & exécutive', items: ['Gestion complète d’agendas complexes', 'Organisation des déplacements et réservations', 'Préparation des réunions et dossiers', 'Filtrage des e-mails et des appels', 'Gestion des priorités au quotidien', 'Rappels, suivis et relances personnelles', 'Confidentialité et information sensible'] }
-      ],
-      tools: ['Google Workspace', 'OneDrive', 'Microsoft Office', 'Notion', 'Asana', 'Trello', 'ClickUp', 'Slack', 'Teams', 'Discord', 'Pipedrive', 'Bitrix', 'Pennylane', 'Zoho', 'Clio', 'Mailchimp', 'ActiveCampaign', 'Learnybox', 'Systeme.io', 'Zapier', 'Power Automate', 'Canva', 'CapCut', 'Clipchamp', 'ElevenLabs', 'Transkriptor', 'ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Perplexity', 'Lodgify', 'Rentila'],
-      collabs: [
-        { name: 'Devenir Pro', meta: 'Organisme de formation · France' },
-        { name: 'My Connecting', meta: 'Organisme de formation · France' },
-        { name: 'SI Canada', meta: 'Service d’immigration · Canada' },
-        { name: 'Vessnart', meta: 'Agence immobilière · Beaulieu-sur-Mer' },
-        { name: 'AIMRE', meta: 'Agence immobilière · Belgique' },
-        { name: 'Marine Piccinini', meta: 'Coaching · Suisse et Dubaï' },
-        { name: 'LLC Publishing', meta: 'Coaching et spiritualité · Mexique' },
-        { name: 'Les Éditions La Comédie Française', meta: 'Maison d’édition · France' },
-        { name: 'Caro et Compagnie', meta: 'Décoration intérieure · France' },
-        { name: 'Kahng', meta: 'Cosmétique · France' }
-      ],
-      quotes: [
-        { initials: 'MP', name: 'Marine Piccinini', role: 'Assistante polyvalente', text: 'Dina est très à l’écoute, d’une grande flexibilité et d’un réel souci de bien faire. Elle accueille les retours avec ouverture. Elle fait preuve d’application et d’engagement, tout en étant une excellente collaboratrice.' },
-        { initials: 'SP', name: 'Solène Pante', role: 'Assistante marketing & éditoriale', text: 'J’ai beaucoup apprécié de travailler avec Dina. Gentille, serviable et toujours prête à aider : sa loyauté et sa bienveillance ont vraiment fait la différence dans notre équipe.' },
-        { initials: 'BT', name: 'Bruna Tuffaloni', role: 'Assistante éditoriale', text: 'Réactive et très adaptable, elle dépasse souvent les attentes. Sa gestion de l’information et son intelligence en font une partenaire de confiance, toujours force de proposition.' }
-      ],
-      skills: ['Écoute active', 'Multi-tâche', 'Organisée', 'Empathique', 'Intègre', 'Sens du détail', 'Rigoureuse', 'Réactive', 'Orientée solution']
-    };
-  }
-}
-</script>
 </body>
 </html>
