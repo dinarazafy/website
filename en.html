@@ -479,8 +479,9 @@ html:not(.motion) .progress { display: none; }
   (function () {
     var root = document.documentElement;
     root.classList.add('js');
-    // ?motion=1 force les animations pour un aperçu sur un poste où elles sont désactivées dans le système.
-    if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches || /[?&]motion=1\b/.test(location.search)) {
+    // Les animations s'affichent pour tous, y compris sur Windows où les « effets d'animation »
+    // du système sont souvent désactivés par défaut. ?motion=0 dans l'adresse les coupe.
+    if (!/[?&]motion=0\b/.test(location.search)) {
       root.classList.add('motion');
       // Filet de sécurité : si le script d'animation ne démarre pas, le contenu reste visible.
       setTimeout(function () { if (!window.__motionReady) root.classList.remove('motion'); }, 3000);
